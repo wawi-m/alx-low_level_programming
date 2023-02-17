@@ -2,6 +2,10 @@
 1.compiles a C file but does not link
 2.generates the assembly code of a C code and save it in an output file
 3.compiles a C file and creates an executable named cisfun
+<<<<<<< HEAD
 3.compiles a C file and creates an executable named cisfun
 4.prints exactly "Programming is like building a multilingual puzzle, followed by a new line
 5.prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line
+=======
+
+>>>>>>> 3938998d9765f0a8d0b8738b6a51d64a4672bb74
