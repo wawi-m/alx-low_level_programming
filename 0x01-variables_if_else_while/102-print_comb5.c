@@ -7,41 +7,26 @@
   */
 int main(void)
 {
-	int x, y, z, n;
+	int x, y;
 
-	for (x = 48; x <= 57; x++)
+	for (x = 0; x < 99; x++)
 	{
-		for (y = 48; y <= 57; y++)
+		for (y = x + 1; y <= 99; y++)
 		{
-			for (z = 48; z <= 57; z++)
-			{
-				for (n = 48; n <= 57; n++)
-				{
-					if (((z + n) > (x + y) &&  z >= x) || x < z)
-					{
-						putchar(x);
-						putchar(y);
-						putchar(' ');
-						putchar(z);
-						putchar(n);
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
+			putchar(' ');
+			putchar((y / 10) + '0');
+			putchar((y % 10) + '0');
 
-					if (x + y + z + n == 227 && n == 57)
-					{
-					break;
-					}
-					else
-					{
-					putchar(',');
-					putchar(' ');
-					}
-					}
-				}
-			}
+			if (x ==98 && y == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
-
 	putchar('\n');
 
 	return (0);
 }
-
