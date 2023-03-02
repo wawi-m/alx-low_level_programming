@@ -1,1 +1,1 @@
-Project 217- C - More pointers, arrays and strings directory
+C projects repository for alx low level programming
