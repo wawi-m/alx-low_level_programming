@@ -1,1 +1,1 @@
-C projects - alx low level programming repository
+C projects repository for alx low level programming
