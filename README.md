@@ -1,2 +1,1 @@
-# alx-low_level_programming
-Repo for C project tasks
+Project 217- C - More pointers, arrays and strings directory
