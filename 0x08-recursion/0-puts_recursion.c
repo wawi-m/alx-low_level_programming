@@ -3,6 +3,7 @@
 
 /**
  * _puts_recursion -  prints a string
+ * @s: input string
  *
  * Return: void
  */
