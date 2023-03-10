@@ -11,7 +11,7 @@ int is_palindrome(char *s)
 {
 	if (*s != '\0')
 		return (0);
-	if (*s == '\0')
-                return (1);
-	return (is_palindrome(s));
+	else if (*s == '\0')
+		return (1);
+	return (*s = is_palindrome(s));
 }
