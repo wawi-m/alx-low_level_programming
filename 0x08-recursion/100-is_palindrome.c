@@ -1,6 +1,6 @@
-#include "main.h"
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
 /**
   * is_palindrome - Returns if a string is palindrome
@@ -8,22 +8,22 @@
   *
   * Return: integer value
   */
-
 int is_palindrome(char *s)
 {
-	int left = 0;
-	int right = strlen(s) - 1;
+	char *r;
 
-	while (left < right)
+	strcpy(s, r);
+	char *strrev(char *s);
+	
+	if (*s == '\0')
+		return (1);
+	else if (*s != '\0')
 	{
-		if (s[left] != s[right])
-		{
-			return (0);
-		}
-
-		left++;
-		right--;
+		if (strcmp(s, r) == 0);
+			return (1);
 	}
-
-	return (1);
+	else
+		return (0);
+	
+	return  (is_palindrome(s));
 }
