@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -13,7 +14,7 @@
 char *_strdup(char *str)
 {
 	char *duplicate;
-	size_t length = strlen(str)
+	size_t length = strlen(str);
 
 	if (str == NULL)
 		return (NULL);
