@@ -1,0 +1,13 @@
+#!/bin/bash
+
+yourName="me"
+maxNum=$(ls -v | grep -E '^[0-9]+$' | tail -1)
+
+if [[ ${maxNum} != 0 ]]; then
+        nextNumber=${maxNum}
+fi
+
+for ((nextNumber = 0; nextNumber < 25; nextNumber++)); do
+	touch "${yourName}${nextNumber}"
+done
+

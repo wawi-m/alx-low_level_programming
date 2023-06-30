@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#set yourName
+yourName="me"
+
+# Find the last or maximum number that already exists
+maxNum=$(ls -1 | grep -E "^${yourName}[0-9]+$" | awk -F"${yourName}" '{print $2}' | sort -rn | head -n 1)
+
+# If there are no existing files, start with 0
+if [[ -z $maxNum ]]; then
+    maxNum=0
+fi
+
+# Create the next batch of 25 files with increasing numbers
+for ((i = 1; i <= 25; i++)); do
+    nextNumber=$((maxNum + i))
+    touch "${yourName}${nextNumber}"
+done
